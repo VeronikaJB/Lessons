@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4691/4691192.png" type="image/png">
+</head>
+
+<body style="font-style: italic;">
+    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <strong><u style="color: crimson">Анкета для
+                владельцев
+                котиков</u></strong>
+    </h1>
+    <p>У Вас есть огромный шанс сделать любимого питомца звездой! Для съемок в кино требуются прекрасные пушистики.</p>
+    <p>Не упустите возможность для Вашего четвероногого друга стать киноактером!</p>
+    <p>Вам необходимо заполнить анкету</p>
+    <fieldset>
+        <legend style="color:chocolate"><strong>Имя</strong></legend>
+        <div>
+            <label for="nickname"><b>Кличка питомца</b></label>
+            <input type="text" id="nickname" name="nickname">
+        </div><br>
+        <div>
+            <label for="name"><b>ФИО владельца</b></label>
+            <input type="text" id="name" name="name">
+        </div><br>
+        <div>
+            <label for="tel"><b>Контакты владельца</b></label>
+            <input type="tel" id="tel" name="tel">
+        </div>
+    </fieldset><br>
+
+    <div><strong>Выберите породу питомца</strong></div><br>
+    <select>
+        <option value="first option">Абиссинская кошка</option>
+        <option value="second option">Бенгальская</option>
+        <option value="third option">Британская</option>
+        <option value="four option">Мейн-кун</option>
+        <option value="five option">Персидская</option>
+        <option value="six option">Сиамская</option>
+    </select>
+    <div><br>
+        <label for="color"><b>Окрас питомца</b></label>
+        <input type="text" id="color" name="color">
+    </div><br>
+    <div>
+        <label for="age"><b>Возраст питомца</b></label>
+        <input type="number" id="age" name="age">
+    </div><br>
+    <div><strong>Пол питомца</strong></div>
+    <label><input type="radio" id="sex1" name="s" value="m">Самец</label>
+    <label><input type="radio" id="sex2" name="s" value="f">Самка</label>
+    <div><br>
+        <fieldset>
+            <legend style="color:chocolate"><strong>Питание</strong></legend>
+            <div><strong>Чем кормим питомца</strong></div><br>
+            <label><input type="checkbox" value="normal">Натуральный корм</label>
+            <label><input type="checkbox" value="dry">Сухой корм</label><br>
+            <label><input type="checkbox" value="wet">Влажный корм</label>
+            <label><input type="checkbox" value="mixed">Смешанный корм</label>
+        </fieldset>
+    </div><br>
+
+    <div>
+        <label for="comments"><strong>Комментарий</strong></label><br>
+        <textarea id="comments" rows="5" cols="20"
+            placeholder="Здесь можно написать что-то важное о Вашем питомце"></textarea>
+    </div><br>
+
+    <div><label for="photo">Прикрепите фото Вашего питомца</label>
+        <input type="file" id="photo" name="photo" accept=".jpg, .jpeg, .png">
+    </div>
+
+    <div><button type="submit"><strong>Сохранить</strong></button></div>
+
+</body>
+
+</html>

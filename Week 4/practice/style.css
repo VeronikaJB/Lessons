@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sant-serif;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 40px;
+    width: 100%;
+
+}
+
+.container_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px;
+}
+
+p {
+    color: #005FA3;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.name_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+#tel {
+    color: black;
+    width: 17px;
+    height: 17px;
+}
+
+#time {
+    width: 17px;
+    height: 17px;
+}
+
+#mail {
+    width: 17px;
+    height: 17px;
+}
+
+#adress {
+    width: 17px;
+    height: 17px;
+}
+
+.section_1 {
+    color: var(--text-color, #3a074e);
+    font-size: 14px;
+    font-family: 'Playfair+Display', serif;
+    padding: 20px;
+}
+
+.section_2 {
+    color: var(--text-color, #3a074e);
+    font-size: 14px;
+    font-family: 'Playfair+Display', serif;
+    padding: 20px;
+}
+
+.section_3 {
+    color: var(--text-color, #3a074e);
+    font-size: 14px;
+    font-family: 'Playfair+Display', serif;
+    padding: 20px;
+}
+
+.section_4 {
+    color: var(--text-color, #3a074e);
+    font-size: 14px;
+    font-family: 'Playfair+Display', serif;
+    padding: 20px;
+}
+
+.section_5 {
+    color: var(--text-color, #3a074e);
+    font-size: 14px;
+    font-family: 'Playfair+Display', serif;
+    padding: 20px;
+}
+
+h2 {
+    font-family: Merriweather, 'Times New Roman', sans-serif;
+    font-size: 48px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px;
+
+}
+
+.button_1 {
+    background-color: #005FA3;
+    color: white;
+    height: 60px;
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #BDBDBD;
+    font-size: 24px;
+    position: absolute;
+    width: 445px;
+    height: 23px;
+    left: 10px;
+    top: 800px;
+}
+
+h4 {
+    font-family: Merriweather, 'Times New Roman', sans-serif;
+    color: #005FA3;
+    font-size: 30px;
+    position: absolute;
+    width: 663px;
+    height: 47px;
+    left: 10px;
+    top: 840px;
+}
+
+.piter {
+    background-image: url(../assets/images/Rectangle.jpg);
+    width: 100%;
+    height: 600px;
+}
+
+.outsource {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 75px;
+    top: 900px;
+}
+
+.outsource:hover {
+    color: #4644da;
+}
+
+.money {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 455px;
+    top: 874px;
+}
+
+.money:hover {
+    color: #4644da;
+}
+
+.accounting {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 830px;
+    top: 852px;
+}
+
+.accounting:hover {
+    color: #4644da;
+}
+
+#outsource {
+    position: absolute;
+    width: 350px;
+    height: 360px;
+    left: 10px;
+    top: 920px;
+}
+
+#money {
+    position: absolute;
+    width: 350px;
+    height: 360px;
+    left: 400px;
+    top: 920px;
+}
+
+#accounting {
+    position: absolute;
+    width: 350px;
+    height: 360px;
+    left: 790px;
+    top: 920px;
+}
+
+#about {
+    position: absolute;
+    color: #BDBDBD;
+    font-family: 'Times New Roman', Times, serif;
+    left: 10px;
+    top: 1360px;
+    font-size: 24px;
+    width: 445px;
+    height: 23px;
+
+}
+
+#name {
+    position: absolute;
+    font-family: Merriweather, 'Times New Roman', sans-serif;
+    font-size: 30px;
+    left: 10px;
+    top: 1400px;
+    color: #005FA3;
+    width: 663px;
+    height: 47px;
+}
+
+.about_us {
+    position: absolute;
+    top: 1450px;
+    left: 10px;
+    width: 300px;
+    color: black;
+    font-size: 14px;
+}
+
+#advantages {
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    left: 380px;
+    top: 1410px;
+    background: #EBEBEB;
+}
+
+#conditions {
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    left: 680px;
+    top: 1410px;
+    background: #EBEBEB;
+}
+
+#deals {
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    left: 980px;
+    top: 1410px;
+    background: #EBEBEB;
+
+}
+
+.advantages {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    left: 420px;
+    top: 1150px;
+}
+
+.conditions {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    left: 750px;
+    top: 1130px;
+}
+
+.deals {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    left: 1050px;
+    top: 1108px;
+}
+
+.companies {
+    background-image: url(../assets/images/Rectangle6.png);
+    position: absolute;
+    left: 10px;
+    top: 1700px;
+    width: 1225px;
+    height: 400px;
+
+}
+
+#clients {
+    position: absolute;
+    color: #BDBDBD;
+    font-family: 'Times New Roman', Times, serif;
+    left: 10px;
+    top: 100px;
+    font-size: 24px;
+}
+
+#work {
+    position: absolute;
+    font-family: Merriweather, 'Times New Roman', sans-serif;
+    font-size: 30px;
+    left: 10px;
+    top: 140px;
+    color: #005FA3;
+
+}
+
+.reviews {}
+
+.review {
+    position: absolute;
+    color: #BDBDBD;
+    font-family: 'Times New Roman', Times, serif;
+    left: 10px;
+    top: 2150px;
+    font-size: 24px;
+}
+
+.thanks {
+    position: absolute;
+    font-family: Merriweather, 'Times New Roman', sans-serif;
+    font-size: 30px;
+    left: 10px;
+    top: 2190px;
+    color: #005FA3;
+}
+
+.review_1 {
+    position: absolute;
+    background-image: url(../assets/images/Rectangle6.png);
+    width: 1225px;
+    height: 320px;
+    top: 2250px;
+}
+
+#photo {
+    position: absolute;
+    background-color: #cfc9c9;
+    height: 80px;
+    width: 80px;
+    top: 120px;
+    left: 80px;
+}
+
+.kat {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    top: 2390px;
+    left: 250px;
+}
+
+#submit {
+    position: absolute;
+    background-color: #005FA3;
+    width: 270px;
+    height: 60px;
+    top: 170px;
+    left: 890px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+
+}
+
+.text {
+    color: white;
+    margin: 40px;
+}
+
+#ima,
+#surname,
+#sms {
+    background: transparent;
+}
+
+input:valid {
+    color: white;
+}
+
+
+.connection {
+    position: absolute;
+    background-image: url(../assets/images/Rectangle.jpg);
+    width: 1225px;
+    height: 320px;
+    top: 2650px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.adress_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.adress_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
