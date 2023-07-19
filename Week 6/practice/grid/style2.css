@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.grid_container {
+    display: grid;
+    grid-template: 100px 1fr 150px / 1fr 400px;
+
+}
+
+.grid_header {
+    display: grid;
+    grid-column: span 2;
+    justify-content: center;
+    background: grey;
+    align-items: center;
+}
+
+.grid_main {
+    display: grid;
+    grid-template-rows: 1fr 80px 80px;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(252, 238, 178);
+    gap: 2em;
+    padding: 2em;
+}
+
+.main_container_1 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+[class^="main_container_block"] {
+    background: rgb(252, 233, 151);
+    padding: 2em 1em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container_block-3 {
+    grid-column: span 2;
+}
+
+.grid_aside {
+    padding: 2em;
+    background: #d0f0ac;
+    text-align: center;
+}
+
+.grid_footer {
+    display: grid;
+    grid-column: span 2;
+    grid-template: 1fr / repeat(4, 1fr);
+    background: grey;
+    gap: 2em;
+    padding: 2em;
+}
+
+.grid_footer>div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em;
+    background: lightgrey;
+}
+
+@media screen and (max-width: 415px) {
+    .grid_container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .grid_header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        background: grey;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .grid_main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        background: rgb(252, 238, 178);
+        gap: 2em;
+        padding: 2em;
+    }
+
+    [class^="main_container_block"] {
+        background: rgb(252, 233, 151);
+        padding: 2em 1em;
+        display: grid;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .grid_aside {
+        display: grid;
+        grid-column: 1/3;
+        width: 100%;
+        padding: 2em;
+        background: #d0f0ac;
+        text-align: center;
+    }
+
+    .grid_footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background: grey;
+        gap: 2em;
+        padding: 2em;
+    }
+}

@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 2vw;
     height: 100%;
 }
 
@@ -16,70 +16,63 @@ body {
 
 .grid_container {
     display: grid;
-    grid-template-rows: 100px 2fr 1fr;
+    grid-template: 15% 1fr 20% / 1fr 30%;
+
 }
 
 .grid_header {
     display: grid;
-    height: 100px;
-    grid-template-rows: 1fr;
-    text-align: center;
+    grid-column: span 2;
+    justify-content: center;
     background: grey;
-    padding: 20px;
+    align-items: center;
 }
 
 .grid_main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 20% 20%;
+    grid-template-columns: 1fr 1fr;
     background: rgb(252, 238, 178);
     gap: 2em;
-}
-
-.main_container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
+    padding: 2em;
 }
 
 .main_container_1 {
-    display: grid;
+    grid-column: span 2;
     text-align: center;
 }
 
-.main_container_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    gap: 2em;
-
-}
-
-.main_container_2>div {
+[class^="main_container_block"] {
     background: rgb(252, 233, 151);
-    padding: 2em 10em;
+    padding: 2em 1em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.main_container_2>div:nth-child(3) {
-    grid-column: 1/3;
+.main_container_block-3 {
+    grid-column: span 2;
 }
 
 .grid_aside {
-    display: grid;
-    padding: 20px;
+    padding: 2em;
     background: #d0f0ac;
     text-align: center;
 }
 
 .grid_footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: span 2;
+    grid-template: 1fr / repeat(4, 1fr);
     background: grey;
-    align-items: center;
     gap: 2em;
+    padding: 2em;
 }
 
 .grid_footer>div {
-    text-align: center;
-    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em;
     background: lightgrey;
 }
